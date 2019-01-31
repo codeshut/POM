@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Automation Suite">
+
+	<listeners>
+		<listener
+			class-name="com.automationpractice.extentreportlistener.ExtentReportListener" />
+	</listeners>
+
+<test name="My Test Name">
+	<classes>
+		<class name="com.automationpractice.scripts.LandingPageTest">
+		</class>
+		<class
+			name="com.automationpractice.scripts.ProductSearchPageTest">
+
+		</class>
+		<class name="com.automationpractice.scripts.SignInPageTest">
+
+		</class>
+	</classes>
+</test>
+</suite>
