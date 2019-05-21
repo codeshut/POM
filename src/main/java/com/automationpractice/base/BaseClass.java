@@ -18,8 +18,7 @@ public class BaseClass {
 	public BaseClass() {
 		try {
 			prop = new Properties();
-			FileInputStream fis = new FileInputStream(
-					"C:\\Users\\Dhawal\\eclipse-workspace\\TestPOMFramework\\src\\main\\java\\com\\automationpractice\\config\\config.properties");
+			FileInputStream fis = new FileInputStream("/home/dhawal/eclipse-workspace/GitPOM/POM/src/main/java/com/automationpractice/config/config.properties");
 			prop.load(fis);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -32,7 +31,7 @@ public class BaseClass {
 	public static void init() { //To initialize the driver and fetch values stored in properties file
 		String browserName = prop.getProperty("browser"); //This will store "chrome" in browserName variable
 		if(browserName.equals("chrome")) {
-			 System.setProperty("webdriver.chrome.driver", "E:\\chromedriver\\chromedriver.exe");
+			 System.setProperty("webdriver.chrome.driver", "/home/dhawal/selenium jars/chromedriver");
 			 driver = new ChromeDriver(); //driver value is initialized here
 		}
 		
